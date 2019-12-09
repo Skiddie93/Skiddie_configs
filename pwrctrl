@@ -1,0 +1,35 @@
+#!/bin/bash
+
+   selected=$(echo "        Reboot
+       Shutdown
+     NetworkRestart
+       Tilling" | rofi -dmenu -p "")
+
+[[ -z $selected ]] && exit
+
+if [ $selected  = "Reboot" ];
+	then
+
+	reboot
+
+
+elif [[ $selected = "       Shutdown" ]];
+  then
+
+  poweroff
+
+elif [[ $selected = "     NetworkRestart" ]];
+  then
+
+sudo -u skiddie systemctl restart NetworkManager
+
+elif [[ $selected = "       Tilling" ]];
+  then
+
+xdotool key Super+Shift+F11
+
+else
+
+exit
+
+fi

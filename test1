@@ -1,0 +1,67 @@
+#!/bin/bash
+
+   selected=$(echo "         Run
+       Internet
+        Files
+        Music
+        Power" | rofi -dmenu -p "")
+
+[[ -z $selected ]] && exit
+
+if [ $selected = "Internet" ]
+then
+
+ firefox
+
+elif [[ $selected  = "        Files" ]];
+	then
+
+	konsole --profile ranger
+
+
+
+elif [[ $selected = "         Run" ]];
+	then
+
+	rofi -modi drun -show drun
+
+elif [[ $selected = "yt" ]];
+	then
+
+firefox  www.youtube.com
+
+elif [[ $selected = "fb" ]];
+	then
+
+firefox  www.facebook
+
+elif [[ $selected = "msn" ]];
+	then
+
+firefox  www.messenger.com
+
+elif [[ $selected = "lc" ]];
+	then
+
+firefox  www.lichess.org
+
+elif [[ $selected = "        Music" ]];
+	then
+
+konsole --profile music
+
+elif [[ $selected = "gm" ]];
+	then
+
+firefox  www.gmail.com
+
+elif [[ $selected = "        Power" ]];
+	then
+
+cd /home/skiddie/Documents/scripts && ./pwrctrl
+
+else
+
+exit
+
+fi
