@@ -55,6 +55,11 @@ elif [[ $selected = "gm" ]];
 
 firefox  www.gmail.com
 
+elif [[ $selected = "git" ]];
+	then
+
+firefox  https://github.com/Skiddie93/
+
 elif [[ $selected = "        Power" ]];
 	then
 
