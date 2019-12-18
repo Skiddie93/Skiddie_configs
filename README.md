@@ -1,5 +1,5 @@
 # configs
-#Manjaro KDE configs
+# Manjaro KDE configs
 
 -Rofi config  
 Rofi theme customisation from /.config/rofi/  
