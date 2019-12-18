@@ -1,4 +1,3 @@
-# configs
 # Manjaro KDE configs
 
 -Rofi config  
