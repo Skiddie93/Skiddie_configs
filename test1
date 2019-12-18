@@ -4,7 +4,8 @@
        Internet
         Files
         Music
-        Power" | rofi -dmenu -p "")
+        Power
+       Search" | rofi -dmenu -p "")
 
 [[ -z $selected ]] && exit
 
@@ -64,6 +65,11 @@ elif [[ $selected = "        Power" ]];
 	then
 
 cd /home/skiddie/Documents/scripts && ./pwrctrl
+
+elif [[ $selected = "       Search" ]];
+	then
+
+cd /home/skiddie/Documents/scripts && ./search
 
 else
 

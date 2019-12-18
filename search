@@ -1,0 +1,7 @@
+#!/bin/bash
+
+   selected=$(echo "" | rofi -dmenu -p "Search" -width "50px" -lines "0")
+
+[[ -z $selected ]] && exit
+
+surfraw google $selected
